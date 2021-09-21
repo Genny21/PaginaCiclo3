@@ -28,35 +28,35 @@
             </nav>            
         </header>
 
+<!-- ---registro.html-->
         <section class="servicios">
             <h2>REGISTRO</h2>
-            <div class="" id="contactanos">
-            <div class="row">
-                <div class="formulario">
-                    <form action="">
-                        <label for="names">Nombre</label>
-                        <br />
-                        <input type="text" id="names" class="data" placeholder="Name" required />
-                        <br />
-                        <label for="mail">Email</label>
-                        <br />
-                        <input type="email" id="mail" class="data" placeholder="E-mail" required />
-                        <br />
-                        <label for="phone">Teléfono</label>
-                        <br />
-                        <input type="tel" id="phone" placeholder="Phone" class="data" required />
-                        <br />
-                        <label for="message">Mensaje</label>
-                        <br />
-                        <textarea name="" id="message" placeholder="Mesagge" required ></textarea>
-                        <a href="#">
-                        <input type="submit" class="main_btn" value="Enviar" />
-                        </a>
-                    </form>
-                </div>
-                
+            <div class="formulario">
+<!-- --2 campos, nombre de usuario y contraseña. Etiqueta <form> cuyo atributo id debe ser "form_registro_usuario"
+Con la etiqueta <input> cuyos id deben ser "in_usuario" y "in_contrasena"-->
+                <form action="" id="form_registro_usuario">
+                    <label for="in_usuario">Nombre de Usuario</label>
+                    <br />
+                    <input type="text" id="in_usuario" class="data" placeholder="Name" required />
+                    <br />
+                    <label for="in_contrasena">Contraseña</label>
+                    <br />
+                    <input type="password" id="in_contrasena" class="data" placeholder="Contraseña" required />
+                    <br />
+                    <label for="phone">Teléfono</label>
+                    <br />
+                    <input type="tel" id="phone" placeholder="Phone" class="data" required />
+                    <br />
+                    <label for="message">Mensaje</label>
+                    <br />
+                    <textarea name="" id="message" placeholder="Mesagge" required ></textarea>
+                    <a href="#">
+<!-- --etiqueta <button> cuyo atributo id debe ser btn_enviar_registro-->
+                    <button type="submit" class="main_btn" id="btn_enviar_registro">Enviar</button>
+                    </a>
+                </form>
             </div>
-            </div>
+            
         </section>
     
         <aside class="landing_navbar">
