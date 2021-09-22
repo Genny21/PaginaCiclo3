@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="icon" type="image.png" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.png" />
 
     <title>Registro</title>
 </head>
-<body>
+<body class="body">
     <div class="container">
         <header class="encabezado">
             <nav>
@@ -35,9 +35,17 @@
 <!-- --2 campos, nombre de usuario y contraseña. Etiqueta <form> cuyo atributo id debe ser "form_registro_usuario"
 Con la etiqueta <input> cuyos id deben ser "in_usuario" y "in_contrasena"-->
                 <form action="" id="form_registro_usuario">
+                    <label for="nombres">Nombres</label>
+                    <br />
+                    <input type="text" id="nombres" class="data" placeholder="Nombres" required />
+                    <br />
+                    <label for="apellidos">Apellidos</label>
+                    <br />
+                    <input type="text" id="apellidos" class="data" placeholder="Apellidos" required />
+                    <br />
                     <label for="in_usuario">Nombre de Usuario</label>
                     <br />
-                    <input type="text" id="in_usuario" class="data" placeholder="Name" required />
+                    <input type="text" id="in_usuario" class="data" placeholder="Nombre de usuario" required />
                     <br />
                     <label for="in_contrasena">Contraseña</label>
                     <br />
@@ -45,11 +53,19 @@ Con la etiqueta <input> cuyos id deben ser "in_usuario" y "in_contrasena"-->
                     <br />
                     <label for="phone">Teléfono</label>
                     <br />
-                    <input type="tel" id="phone" placeholder="Phone" class="data" required />
+                    <input type="tel" id="phone" placeholder="Teléfono" class="data" required />
                     <br />
-                    <label for="message">Mensaje</label>
+                    <label for="celular">Celular</label>
                     <br />
-                    <textarea name="" id="message" placeholder="Mesagge" required ></textarea>
+                    <input type="tel" id="celular" placeholder="Celular" class="data" required />
+                    <br />
+                    <label for="email">Correo electrónico</label>
+                    <br />
+                    <input type="email" id="email" placeholder="Correo electrónico" class="data" required />
+                    <br />
+                    
+                    
+                    <!-- <textarea id="message" placeholder="Mesagge" required ></textarea> -->
                     <a href="#">
 <!-- --etiqueta <button> cuyo atributo id debe ser btn_enviar_registro-->
                     <button type="submit" class="main_btn" id="btn_enviar_registro">Enviar</button>

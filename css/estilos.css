@@ -17,6 +17,9 @@ body {
       "landing_navbar foot foot";
   }
   
+  .body {
+      background-image: url("images/fondotec.jpg");
+  }
 .encabezado { 
     grid-area: encabezado;
     border: 1px solid red;
@@ -81,7 +84,7 @@ a {
 }
     
 nav a:hover {
-color: var(--orangeAsas-color);
+color: orangered;
 }
     
 /* --------- */
