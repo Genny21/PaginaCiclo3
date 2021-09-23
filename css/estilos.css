@@ -132,3 +132,19 @@ p, h4 {
 h2 {
     text-align: center;
 }
+
+#menu_redes{
+    position: fixed;
+    display: flex;
+    background-color: #ccf2c0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    bottom: 0px;
+    right: 0px;
+    border-left: 2px solid #009966;
+    border-top: 2px solid #009966;
+    border-radius: 15px 0px 0px 0px;
+    width: 230px;
+    height: 40px;    
+    }
