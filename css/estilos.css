@@ -23,19 +23,22 @@ body {
   
 .encabezado { 
     grid-area: encabezado;
-    border: 1px solid red;
+    border: 1px solid black;
     justify-content: center;
     align-items: center;
+    background-color: #0B1047;
+    text-align: center;
+    
 }
 
 .servicios { 
     grid-area: servicios;
-    border: 1px solid lightblue;
+    border: 1px solid black;
 }
 
 .landing_navbar { 
    grid-area: landing_navbar; 
-    border: 1px black solid;
+    border: 1px solid black;
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1.5fr 1fr; 
@@ -47,7 +50,7 @@ body {
 }
 
 .foot {
-    border: 1px solid yellow;
+    border: 1px solid white;
     grid-area: foot; 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -59,12 +62,15 @@ body {
   
 .foot01 {
     grid-area: foot01;
-    border: 1px solid yellow;
+    border: 1px solid white;
+    background-color: cornflowerblue;
+    
 }
 
 .foot02 {
     grid-area: foot02;
-    border: 1px solid yellow;
+    border: 1px solid white;
+    background-color: cornflowerblue;
 }
 
 nav {
@@ -81,10 +87,20 @@ nav ul li {
     list-style: none;
     padding: 0 10px;
 }
+
+.title {
+    text-align: center;
+    font-family: sans-serif ;
+    font-style: oblique;
+    font-size: xx-large;
+    color: #fff;
     
-a {
-    text-decoration: none;
+    
+    
+    
 }
+    
+
     
 nav a:hover {
 color: orangered;
@@ -97,7 +113,7 @@ color: orangered;
 }
 
 aside{
-    border: 5px solid blue;
+    border: 5px solid black;
 }
 
 #btn_irRegistro {
@@ -191,7 +207,7 @@ ul, ol {
 }
 .nav_01 {
     grid-area: nav_01;
-    border: 1px black solid;
+   
     
     display:block;
     flex-direction: column;
@@ -200,7 +216,7 @@ ul, ol {
 }
 .nav_02 {
     grid-area: nav_02;
-    border: 1px black solid;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -211,7 +227,7 @@ ul, ol {
 
 .nav {
     grid-area: nav_01;
-    border: 1px black solid;
+    
     
     display:block;
     flex-direction: column;
