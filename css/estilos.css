@@ -129,7 +129,7 @@ aside{
 }
   
 .data, textarea {
-    width: 95%;
+    width: 30%;
     padding: 5px;
     border-radius: 2px;
     border: 1px solid lightgrey;
