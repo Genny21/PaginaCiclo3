@@ -23,11 +23,13 @@ body {
   
 .encabezado { 
     grid-area: encabezado;
-    border: 1px solid black;
+    border: 1px solid red;
     justify-content: center;
     align-items: center;
     background-color: #0B1047;
     text-align: center;
+    height:  70px;
+    width: auto;
     
 }
 
