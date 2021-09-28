@@ -250,3 +250,13 @@ ul, ol {
 .nav01 a {
 
 }
+
+/*Requisitos usuario y password*/
+.requisitos{
+    font-style: italic;
+    font-size: 14px;
+    color: #ffff00;
+}
+/*Fin requisitos usuario y password*/
+
+
