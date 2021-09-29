@@ -1,3 +1,8 @@
+* {
+    padding: 1px;
+    margin: 1px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -20,17 +25,14 @@ body {
       "landing_navbar foot foot";
   }
   
-  
 .encabezado { 
     grid-area: encabezado;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     background-color: #0B1047;
     text-align: center;
     height:  70px;
     width: auto;
-    
 }
 
 .servicios { 
@@ -39,7 +41,7 @@ body {
 }
 
 .landing_navbar { 
-   grid-area: landing_navbar; 
+    grid-area: landing_navbar; 
     border: 1px solid black;
     display: grid; 
     grid-template-columns: 1fr; 
@@ -48,7 +50,6 @@ body {
     grid-template-areas: 
         "nav_01"
         "nav_02"; 
-    
 }
 
 .foot {
@@ -60,21 +61,20 @@ body {
     gap: 5px 0px; 
     grid-template-areas: 
       "foot01 foot02"; 
-  }
+}
   
 .foot01 {
     grid-area: foot01;
     border: 1px solid white;
     background-color: #0B1047;
     color: white;
-    
 }
 
 .foot02 {
     grid-area: foot02;
     border: 1px solid white;
     background-color: #0B1047;
-        color: white;
+    color: white;
 }
 
 nav {
@@ -98,10 +98,6 @@ nav ul li {
     font-style: oblique;
     font-size: xx-large;
     color: #fff;
-    
-    
-    
-    
 }
 
 button{
@@ -116,12 +112,8 @@ button{
     text-align-last:center ;
     position: relative;
     align-content: flex-start;
-    
-    
 }
-    
-
-    
+  
 nav a:hover {
 color: orangered;
 }
@@ -169,12 +161,21 @@ p, h4 {
 
 h2, h1 {
     text-align: center;
+    color: white;
 }
 
-.label {
-    
+label {
     font-size: medium;
     font-family: fantasy;
+    color: white
+}
+
+.data:valid {
+    background-color: rgb(215, 243, 226);
+  }
+
+data:invalid {
+    background-color: rgba(245, 245, 245, 0.863);
 }
 
 /*Seccion redes sociales por Gilberto Leguizamon*/
@@ -204,9 +205,7 @@ h2, h1 {
     margin: 200;
     width: 280px;
     font-family:Arial, Helvetica, sans-serif;
-    
 }
-
 
 .nav li ul {
     display:none;
@@ -240,39 +239,29 @@ ul, ol {
 }
 .nav_01 {
     grid-area: nav_01;
-   
-    
     display:block;
     flex-direction: column;
     flex-wrap: wrap;
     
 }
+
 .nav_02 {
     grid-area: nav_02;
-    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 ul, ol {
     list-style:none;
 }
 
 .nav {
-    grid-area: nav_01;
-    
-    
+    grid-area: nav_01;    
     display:block;
     flex-direction: column;
     flex-wrap: wrap;
     
-}
-* {
-    padding:1px;
-    margin:1px;
-}
-.nav01 a {
-
 }
 
 /*Requisitos usuario y password*/
@@ -282,5 +271,3 @@ ul, ol {
     color: white;
 }
 /*Fin requisitos usuario y password*/
-
-

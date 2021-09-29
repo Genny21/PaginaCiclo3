@@ -26,47 +26,44 @@
 Con la etiqueta <input> cuyos id deben ser "in_usuario" y "in_contrasena"-->
                 <form action="" id="form_registro_usuario">
                     <label class="label" for="nombres">Nombres</label>
-                    <br />
+                    <br>
                     <input type="text" id="nombres" class="data" placeholder="Nombres" required  />
-                    <br />
+                    <br><br>
                     <label class="label" for="apellidos">Apellidos</label>
-                    <br />
+                    <br>
                     <input type="text" id="apellidos" class="data" placeholder="Apellidos" required />
-                    <br />
+                    <br><br>
                     <label class="label" for="in_usuario">Nombre de Usuario</label>
-                    <br />
+                    <br>
                     <input type="text" id="in_usuario" class="data" placeholder="Nombre de usuario" required />
-                    <label class="requisitos usuario"> 
-                        <ul>
-                            <li>Debe ingresar más de 3 caracteres</li>
-                            <li>Debe tener 9 o menos caracteres</li>
-                            <li>Sólo puede ingresar caracteres alfanuméricos(letras de la A a la Z y números del 0 al 9)</li>
-                        </ul>
-                    </label>
-                    <br/>
+                    <br>
+                    <p class="requisitos">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debe ingresar más de 3 caracteres.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debe tener 9 o menos caracteres.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sólo puede ingresar caracteres alfanuméricos(letras de la A a la Z y números del 0 al 9)
+                    </p>
+                    <br><br>
                     <label class="label" for="in_contrasena">Contraseña</label>
-                    <br />
+                    <br>
                     <input type="password" id="in_contrasena" class="data" placeholder="Contraseña" required />
-                    <label class="requisitos password"> 
-                        <ul>
-                            <li>Debe tener 6 o más caracteres</li>
-                            <li>Sólo puede ingresar caracteres alfanuméricos(letras de la A a la Z y números del 0 al 9)</li>
-                        </ul>
-                        <br />
-                    </label>
+                    <br>
+                    <p class="requisitos">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debe tener 6 o más caracteres.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sólo puede ingresar caracteres alfanuméricos(letras de la A a la Z y números del 0 al 9)
+                    </p>
+                    <br><br>
                     <label class="label" for="in_contrasena">Confirmar contraseña</label>
-                    <br />
+                    <br>
                     <input type="password" id="conf_contrasena" class="data" placeholder="Contraseña" required />
-                    <br/>
-                    
+                    <br><br>
                     <label class="label" for="phone">Teléfono</label>
                     <br />
                     <input type="tel" id="phone" placeholder="Teléfono" class="data" required />
-                    <br />
+                    <br /><br>
                     <label class="label" for="celular">Celular</label>
                     <br />
                     <input type="tel" id="celular" placeholder="Celular" class="data" required />
-                    <br />
+                    <br /><br>
                     <label class="label" for="email">Correo electrónico</label>
                     <br />
                     <input type="email" id="email" placeholder="Correo electrónico" class="data" required />
@@ -76,11 +73,10 @@ Con la etiqueta <input> cuyos id deben ser "in_usuario" y "in_contrasena"-->
                     <!-- <textarea id="message" placeholder="Mesagge" required ></textarea> -->
                     <a href="#">
 <!-- --etiqueta <button> cuyo atributo id debe ser btn_enviar_registro-->
-                    <button type="button" class="main_btn" id="btn_enviar_registro" onclick="validar_nombreUsuario(document.getElementById('in_usuario').value);validar_contrasena(document.getElementById('in_contrasena').value);">CREAR
-                    <br/>
-                        <img src="images/agregar-usuario.png" width="30" height="30" >
-                        
-                    </button>
+                        <button type="button" class="main_btn" id="btn_enviar_registro" onclick="validar_nombreUsuario(document.getElementById('in_usuario').value);validar_contrasena(document.getElementById('in_contrasena').value);">CREAR
+                        <br/>
+                            <img src="images/agregar-usuario.png" width="30" height="30" >
+                        </button>
                     
                     </a>
                 </form>
