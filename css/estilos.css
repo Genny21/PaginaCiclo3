@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     padding: 0 20px;
-    background-image: url("../images/Imagen1.jpg");
+    background-image: url("../images/geometric.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -65,14 +65,16 @@ body {
 .foot01 {
     grid-area: foot01;
     border: 1px solid white;
-    background-color: cornflowerblue;
+    background-color: #0B1047;
+    color: white;
     
 }
 
 .foot02 {
     grid-area: foot02;
     border: 1px solid white;
-    background-color: cornflowerblue;
+    background-color: #0B1047;
+        color: white;
 }
 
 nav {
@@ -98,6 +100,22 @@ nav ul li {
     color: #fff;
     
     
+    
+    
+}
+
+button{
+    background-color: #0B1047;
+    color: white;
+    border-bottom-color: black;
+    border: 1px solid;
+    font-family: Broadway;
+    font-size: medium;
+    width: 150px;
+    height: 53px;
+    text-align-last:center ;
+    position: relative;
+    align-content: flex-start;
     
     
 }
@@ -149,8 +167,14 @@ p, h4 {
     margin: 0;
 }
 
-h2 {
+h2, h1 {
     text-align: center;
+}
+
+.label {
+    
+    font-size: medium;
+    font-family: fantasy;
 }
 
 /*Seccion redes sociales por Gilberto Leguizamon*/
@@ -255,7 +279,7 @@ ul, ol {
 .requisitos{
     font-style: italic;
     font-size: 14px;
-    color: #ffff00;
+    color: white;
 }
 /*Fin requisitos usuario y password*/
 
