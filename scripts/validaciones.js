@@ -1,37 +1,60 @@
 function validar_nombreUsuario(string){
-    
-    let form = document.form_registro_usuario;
-    let usuario=string;
-    const filterAlpha = (str) => {
-        if (typeof str !== "string")
-            return false;
-        return str.replace(/([A-Z]|[a-z]|[0-9]){4,9}/g, "") === "";
+    var error = "";
+    let longitud = string.length;
+    if(longitud <= 3){
+        error += "El nombre de usuario debe tener mas de 3 caracteres \n";
     }
-    
-    if(filterAlpha(usuario)==true && usuario!=""){
-        alert("verdadero");
+    if(longitud > 9){
+        error += "El nombre de usuario debe tener menos de 10 caracteres \n";
+    }
+    if(!verificacionAlfanumerica(string)){
+        error += "El nombre de usuario debe contener solo caracteres alfanumericos (A-Z 0-9)";
+    }
+    if(error === ""){
+        alert("Nombre de usuario valido");
+        return true;
     }else{
-        alert("falso");
+        alert(error);
+        return false;
     }
-    
 }
+
 function validar_contrasena(string){
-    let form = document.form_registro_usuario;
-    let contrasena=string;
-    const filterAlpha = (str) => {
-        if (typeof str !== "string")
-            return false;
-        return str.replace(/([A-Z]|[a-z]|[0-9]){6,}/g, "") === "";
+    var error = "";
+    let longitud = string.length;
+    if(longitud < 6){
+        error += "La contrasena debe tener 6 o mas caracteres \n";
     }
-    
-    if(filterAlpha(contrasena)==true && contrasena!=""){
-        alert("verdadero");
+    if(!verificacionAlfanumerica(string)){
+        error += "La contrasena debe contener solo caracteres alfanumericos (A-Z 0-9)";
+    }
+    if(error === ""){
+        alert("Contrasena valida");
+        return true;
     }else{
-        alert("falso");
-    }
+        alert(error);
+        return false;
+    }    
 }
-module.exports.validar_nombreUsuario = validar_nombreUsuario();
-module.exports.validar_contrasena = validar_contrasena();
+
+function verificacionAlfanumerica(dato){
+   var expresion = /^[0-9a-zA-Z]+$/;
+   if(expresion.test(dato)){
+      return true;
+   }else{
+      return false;
+   }
+}
+
+module.exports.validar_nombreUsuario = validar_nombreUsuario;
+module.exports.validar_contrasena = validar_contrasena;
+
+
+
+
+
+
+
 
 
 
