@@ -28,6 +28,10 @@ function validar_contrasena(string){
     if(!verificacionAlfanumerica(string)){
         error += "La contrasena debe contener solo caracteres alfanumericos (A-Z 0-9)";
     }
+    if (!verificarConfirmacion(string)) {
+        error += "Las contrasenas ingresadas no coinciden entre si";
+    }
+
     if(error === ""){
         alert("Contrasena valida");
         return true;
@@ -45,6 +49,16 @@ function verificacionAlfanumerica(dato){
       return false;
    }
 }
+
+function verificarConfirmacion(string){
+    var elemento = document.getElementById('conf_contrasena');
+    if (string.localeCompare(elemento.value)==0) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
 
 module.exports.validar_nombreUsuario = validar_nombreUsuario;
 module.exports.validar_contrasena = validar_contrasena;
