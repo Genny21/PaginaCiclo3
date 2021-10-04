@@ -23,13 +23,13 @@ function validar_contrasena(string){
     var error = "";
     let longitud = string.length;
     if(longitud < 6){
-        error += "La contrasena debe tener 6 o mas caracteres \n";
+        error += "La contraseña debe tener 6 o mas caracteres \n";
     }
     if(!verificacionAlfanumerica(string)){
-        error += "La contrasena debe contener solo caracteres alfanumericos (A-Z 0-9)";
+        error += "La contraseña debe contener solo caracteres alfanumericos (A-Z 0-9)";
     }
     if(error === ""){
-        alert("Contrasena valida");
+        alert("Contraseña valida");
         return true;
     }else{
         alert(error);
