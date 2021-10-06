@@ -117,20 +117,8 @@ function pedir() {
 }
 
 
-
-
 module.exports.registros=registros;
 module.exports.validar_nombreUsuario = validar_nombreUsuario;
 module.exports.validar_contrasena = validar_contrasena;
 module.exports.filtrarPorContrasena = filtrarPorContrasena;
 module.exports.agregarRegistro = agregarRegistro;
-
-
-
-
-
-
-
-
-
-
