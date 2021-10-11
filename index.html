@@ -14,13 +14,129 @@
         <title>TECNOTIC</title>
     </head>
     <body class="body">
-        <div class="container">
-            
+        <div class="container">          
             <header class="encabezado">
                 <nav>
                     <a class="title">TECNOTIC</a>
                 </nav>            
             </header>
+            <!-- ---seccion servicios-->
+            <section class="servicios">
+                <h1  >¿QUIENES SOMOS?</h1>
+                <br />
+                <h2>
+                    Somos prestadores de servicios tecnologicos, buscamos la evolución digital de nuestros clientes a través de soluciones tecnologicas hechas a la medida
+                </h2>
+                <br />
+                <img src="images/desktop.jpg" id="img_ppal" width="300" height="200">
+<!-- si queremos am´liar la informacion de los servicios, debemos hacer los html de cada uno. como esta en el a -->
+                <h2 class="services_title" id="servicios">NUESTROS SERVICIOS</h2>
+                <div class="services">
+                  <div class="container_service">
+                    <img src="images/software.png" alt="Fabrica de Software" />
+                    <div class="text">
+                      <h3>Software a su medida</h3>
+                      <br>
+                      <p>
+                        Creamos <u>software, sistemas y servicios,</u> con procesos sostenibles, rentables, pensando en su negocio.
+                        Así construimos soluciones tecnológicas que impulsan sus proyectos hacia adelante.
+                      </p>
+                      <br>
+                      <a href="Fabrica_de_Software.html">
+                        <input type="submit" class="main_btn" value="Más Info..." />
+                      </a>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="container_service">
+                    <img src="images/TI.png" alt="TI" />
+                    <div class="text">
+                      <h3>Gestión de Procesos de Tecnología de la Información (TI)</h3>
+                      <br>
+                      <p>
+                        <u>Diseñamos, implementamos y administramos plataformas tecnológicas</u> en nuestro Datacenter Monserrate certificado TIER III, prestando todo el portafolio de ITSM (Administración de Servicios de Tecnología) y monitoreo integral en nuestro Centro de Monitoreo NOC siguiendo los marcos de referencia ITIL V4, ISO 20000 y TOGAF.
+                      </p>
+                      <br>
+                      <a href="TI.html">
+                        <input type="submit" class="main_btn" value="Más Info..." />
+                      </a>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="container_service">
+                    <img src="images/seguridad.png" alt="Seguridad de la Información" />
+                    <div class="text">
+                      <h3>Centro de Seguridad de la Información</h3>
+                      <br>
+                      <p>
+                        Solución integral para que sus activos informáticos, procesos de <u>gestión de seguridad y staff,</u> estén alineados con los objetivos de su negocio.
+                      </p>
+                      <br>
+                      <a href="seguridad.html">
+                        <input type="submit" class="main_btn" value="Más Info..." />
+                      </a>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="container_service">
+                    <img src="images/equipos.png" alt="Renta de Equipos" />
+                    <div class="text">
+                      <h3>Renta de Equipos Tecnológicos y periféricos</h3>
+                      <br>
+                      <p>
+                        Si lo que busca es el crecimiento, modernización y competitividad de su empresa; el <u>arrendamiento de equipos de cómputo</u> es una herramienta estratégica para su organización.
+                      </p>
+                      <br>
+                      <a href="arrendamiento.html">
+                        <input type="submit" class="main_btn" value="Más Info..." />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            
+<!-- ---barra lateral izquierda-->
+<!--No solicitado el aside. solo el nav y dentro de esta un logo <img > cuyo atributo id debe ser navbar_logo
+En la barra de navegación, agregue un button > cuyo atributo id debe ser btn_irRegistro ””.
+Agregue una etiqueta <a> cuyo atributo id sea "link_registro”,-->
+            <aside class="landing_navbar">   
+                <nav id="landing_navbar"> 
+                    <div class="nav_01">
+                        <a href="#">
+                            <img id="navbar_logo" src="images/imagenlogo_1.png" width="150" height="300" style="position: relative; left: 25%; "   />
+                        </a>
+                        <div id="menus">
+                            <ul class="nav" >
+                                <li><a href="">Inicio</a>
+                                </li>
+                                <li><a href="">Descubrenos</a>
+                                    <ul>
+                                        <li><a href="documentos/Misión.pdf">Misión</a></li>
+                                        <li><a href="documentos/Visión.pdf">Visión</a></li>
+                                        <li><a href="documentos/política.pdf">Nuestra política</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#servicios">Productos y Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="">Proyectos</a>
+                                </li>
+                                <li>
+                                    <a href="#contactenos">Contactenos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <a href="registro.html" id="link_registro">
+                   <button  id="btn_irRegistro"  style="position: relative; top: 70%; left: 25%; " title="A Registro">
+                        REGISTRO
+                        <br />
+                        <img src="images/registrarse.png" width="30" height="30" >
+                    </button>
+                </a>
+            </aside>
             <!-- Barra de acceso a redes sociales por Gilberto Leguizamon-->
             <div id="menu_redes">
                 <a class="social_network" href="https://www.whatsapp.com/?lang=es" target="_blank" title="WhatsApp">
@@ -39,82 +155,8 @@
                     <img src="images/Instagram-icon.png" alt="Instagram"/>
                 </a>
             </div>
-            <!-- ---seccion servicios-->
-            <section class="servicios">
-                <h1  >¿QUIENES SOMOS?</h1>
-                <br />
-                <h2>
-                    Somos prestadores de servicios tecnologicos, buscamos la evolución digital de nuestros clientes a través de soluciones tecnologicas hechas a la medida
-                </h2>
-                <br />
-                <img src="images/desktop.jpg" width="300" height="200" style="position: absolute; left: 45%;" >
-            </section>
-<!-- ---barra lateral izquierda-->
-<!--No solicitado el aside. solo el nav y dentro de esta un logo <img > cuyo atributo id debe ser navbar_logo
-En la barra de navegación, agregue un button > cuyo atributo id debe ser btn_irRegistro ””.
-Agregue una etiqueta <a> cuyo atributo id sea "link_registro”,-->
-            <aside class="landing_navbar">   
-                <nav id="landing_navbar"> 
-                    <div class="nav_01">
-                        <a href="#">
-                            <img id="navbar_logo" src="images/imagenlogo_1.png" width="150" height="300" style="position: relative; left: 25%; "   />
-                        </a>
-
-                        <div id="menus">
-
-                            <ul class="nav" >
-
-                                <li><a href="">Inicio</a>
-                                </li>
-
-                                <li><a href="">Descubrenos</a>
-                                    <ul>
-
-                                        <li><a href="documentos/Misión.pdf">Misión</a></li>
-                                        <li><a href="documentos/Visión.pdf">Visión</a></li>
-                                        <li><a href="documentos/política.pdf">Nuestra política</a></li>
-
-
-                                    </ul>
-
-                                </li>
-
-                                
-                                <li>
-                                    <a href="servicios.html">Productos y Servicios</a>                
-
-                                </li>
-                                
-
-                                <li>
-                                    <a href="">Proyectos</a>
-
-                                </li>
-                                
-
-                                <li>
-                                    <a href="">Contactenos</a>
-
-                                </li>
-                                
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </nav>
-                <a href="registro.html" id="link_registro">
-                   <button  id="btn_irRegistro"  style="position: relative; top: 70%; left: 25%; " title="A Registro">
-                        REGISTRO
-                        <br />
-                        <img src="images/registrarse.png" width="30" height="30" >
-                        
-                    </button>
-                </a>
-            </aside>
             <!--No solicitado el pie de pagina-->        
-            <footer class="foot">
+            <footer class="foot" id="contactenos">
                 <div class="foot01">
                     <h4>Teléfonos:</h4> 
                     <br> 
@@ -125,8 +167,6 @@ Agregue una etiqueta <a> cuyo atributo id sea "link_registro”,-->
                     <p> Lunes - Viernes: 8am - 5pm &nbsp;&nbsp;&nbsp; Sabados: 8am - 1pm &nbsp;&nbsp;&nbsp; Domingo: cerrado </p>
                 </div>
             </footer>
-
         </div>
-
     </body>
 </html>
