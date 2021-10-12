@@ -29,6 +29,10 @@ body {
   .container_service {
     border: 1px dotted white;
   }
+  
+  .container_productos {
+    border: 1px dotted white;
+  }
 
 
   .services img {
